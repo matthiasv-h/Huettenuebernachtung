@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vier Hütten zur Auswahl</title>
+<meta name="description" content="Vier Berghütten in der Zentralschweiz – eine Nacht oben bleiben.">
+<style>
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  :root{ --ink:#12242F; --paper:#FBFAF5; --deep:#0C2231; --mint:#8FD9D0; }
+  body{
+    background:var(--deep); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+    line-height:1.5; padding:24px 18px 56px;
+  }
+  .wrap{ max-width:960px; margin:0 auto; }
+
+  header{ color:#F4F7F6; padding:8px 2px 26px; }
+  .eyebrow{ font-style:italic; font-size:1rem; color:var(--mint); }
+  h1{ font-size:clamp(1.9rem,6vw,2.9rem); line-height:1.05; letter-spacing:-.02em; margin:6px 0 10px; font-weight:800; }
+  .sub{ font-size:1rem; color:#B4C7D0; max-width:52ch; }
+
+  .cards{ display:flex; flex-direction:column; gap:18px; }
+  .card{ background:var(--paper); border-radius:14px; overflow:hidden; box-shadow:0 6px 20px rgba(0,0,0,.3); }
+
+  .photo{ position:relative; aspect-ratio:16/10; background:var(--tint); }
+  .photo img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .photo .fallback{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+                    color:var(--c); font-weight:700; font-size:.95rem; text-align:center; padding:16px; }
+  .photo.has-img .fallback{ display:none; }
+  .tag{ position:absolute; left:0; bottom:0; background:var(--c); color:#fff; font-size:.75rem;
+        padding:5px 12px; border-top-right-radius:10px; letter-spacing:.03em; }
+
+  .info{ padding:18px 20px 22px; }
+  .head{ display:flex; align-items:baseline; flex-wrap:wrap; gap:4px 10px; }
+  h2{ font-size:1.35rem; letter-spacing:-.02em; color:var(--c); font-weight:800; }
+  .alt{ font-size:.9rem; color:#6C8391; }
+  .place{ font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; color:#93A7B1; margin-left:auto; }
+  .way{ font-size:.88rem; color:#6C8391; margin-top:6px; }
+  .way b{ color:var(--c); }
+  .lead{ margin:12px 0 16px; color:#31474F; }
+  .k{ font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--c); display:block; margin-bottom:8px; font-weight:700; }
+  ul{ list-style:none; display:grid; gap:6px 24px; }
+  li{ position:relative; padding-left:16px; font-size:.94rem; color:#3A5058; }
+  li:before{ content:""; position:absolute; left:0; top:.55em; width:6px; height:6px; border-radius:50%; background:var(--c); }
+
+  footer{ color:#7F9AA6; font-size:.85rem; text-align:center; padding-top:30px; }
+
+  @media (min-width:720px){
+    .card{ display:grid; grid-template-columns:minmax(0,300px) 1fr; }
+    .photo{ aspect-ratio:auto; height:100%; min-height:250px; }
+    ul{ grid-template-columns:1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Eine Nacht auf einer Berghütte</div>
+  <h1>Vier Hütten zur Auswahl</h1>
+  <p class="sub">Überall gibt es Abendessen, ein Lager zum Schlafen und morgens die Sonne über dem Tal – sonst ist jede ganz anders. Schau sie dir an und sag, welche dir am besten gefällt.</p>
+</header>
+
+<div class="cards">
+
+  <article class="card" style="--c:#3F7A2A; --tint:#E3F0D9">
+    <div class="photo">
+      <img src="fotos/sewen.jpg" alt="Sewenhütte" onerror="this.remove()" onload="this.parentNode.classList.add('has-img')">
+      <div class="fallback">Foto Sewenhütte</div>
+      <div class="tag">Sewensee</div>
+    </div>
+    <div class="info">
+      <div class="head"><h2>Sewenhütte</h2><span class="alt">2150 m</span><span class="place">Meiental · UR</span></div>
+      <div class="way">Weg zur Hütte: <b>1½ Stunden</b> zu Fuss hinauf (rund 600 Höhenmeter)</div>
+      <p class="lead">Die lebhafteste der vier: grüne Alp, ein Bergsee gleich daneben und rund um die Hütte richtig viel zum Spielen. Hier sind oft andere Kinder da. Der Weg hinauf ist ein Zwergenweg mit Stationen, am Rand wachsen Heidelbeeren.</p>
+      <span class="k">Was man dort machen kann</span>
+      <ul>
+        <li>Mit der Seilrutsche neben der Hütte fahren</li>
+        <li>Mit dem kleinen Boot auf den Sewensee</li>
+        <li>Spielplatz direkt vor der Tür</li>
+        <li>Klettergärten für Anfänger ausprobieren</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="card" style="--c:#12857E; --tint:#DCF0EE">
+    <div class="photo">
+      <img src="fotos/glattalp.jpg" alt="Glattalphütte" onerror="this.remove()" onload="this.parentNode.classList.add('has-img')">
+      <div class="fallback">Foto Glattalphütte</div>
+      <div class="tag">Glattalpsee</div>
+    </div>
+    <div class="info">
+      <div class="head"><h2>Glattalphütte</h2><span class="alt">1896 m</span><span class="place">Muotathal · SZ</span></div>
+      <div class="way">Weg zur Hütte: <b>10 Minuten</b> ab der Bergstation (rund 50 Höhenmeter)</div>
+      <p class="lead">Eine flache Hochebene, rundherum Felswände, mitten drin ein türkiser See. Der Boden ist zerfurchter Kalkstein voller Löcher und Rillen – es sieht aus wie auf dem Mond. Kühe, Pferde und Schweine laufen frei herum, und es ist sehr, sehr still.</p>
+      <span class="k">Was man dort machen kann</span>
+      <ul>
+        <li>Trampolin, Slackline und Sandkasten bei der Hütte</li>
+        <li>Rund um den Glattalpsee laufen, ohne Steigung</li>
+        <li>Im Bach neben der Hütte planschen</li>
+        <li>Zwischen den Karstfelsen herumklettern</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="card" style="--c:#C2431E; --tint:#FBE3DA">
+    <div class="photo">
+      <img src="fotos/lidernen.jpg" alt="Lidernenhütte" onerror="this.remove()" onload="this.parentNode.classList.add('has-img')">
+      <div class="fallback">Foto Lidernenhütte</div>
+      <div class="tag">Offene Gondel</div>
+    </div>
+    <div class="info">
+      <div class="head"><h2>Lidernenhütte</h2><span class="alt">1727 m</span><span class="place">Riemenstalden · SZ</span></div>
+      <div class="way">Weg zur Hütte: <b>15 Minuten</b> ab der Bergstation (rund 70 Höhenmeter)</div>
+      <p class="lead">Hinauf geht es in einer kleinen Gondel, die oben offen ist – man fährt im Freien den Hang hoch. Die Hütte steht auf einer Kanzel mit Blick weit über die Innerschweiz, abends geht die Sonne genau vor der Terrasse unter.</p>
+      <span class="k">Was man dort machen kann</span>
+      <ul>
+        <li>Am Übungsfelsen vor der Hütte klettern</li>
+        <li>Zum Seelein hinüber und Füsse reinhalten</li>
+        <li>Murmeltiere pfeifen hören</li>
+        <li>Sonnenuntergang und Sterne von der Terrasse</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="card" style="--c:#4C3E9E; --tint:#E4E0F6">
+    <div class="photo">
+      <img src="fotos/rugghubel.jpg" alt="Rugghubelhütte" onerror="this.remove()" onload="this.parentNode.classList.add('has-img')">
+      <div class="fallback">Foto Rugghubelhütte</div>
+      <div class="tag">Wildschutzgebiet</div>
+    </div>
+    <div class="info">
+      <div class="head"><h2>Rugghubelhütte</h2><span class="alt">2296 m</span><span class="place">Engelberg · OW</span></div>
+      <div class="way">Weg zur Hütte: <b>1½–2 Stunden</b> ab dem Sessellift (rund 580 Höhenmeter)</div>
+      <p class="lead">Die höchste und wildeste: Fels, Geröll und Blick auf Gletscher, im Herbst liegt oft schon etwas Schnee. Rundherum ist Wildschutzgebiet, deshalb sind die Tiere hier weniger scheu als anderswo.</p>
+      <span class="k">Was man dort machen kann</span>
+      <ul>
+        <li>Gämsen, Steinböcke und Murmeltiere beobachten</li>
+        <li>Zur Begrüssung gibt es Sirup gratis</li>
+        <li>Mit Sessellift und Bahn hinauffahren</li>
+        <li>Unten am Berg: Barfussweg am Härzlisee, Rodelbahn</li>
+      </ul>
+    </div>
+  </article>
+
+</div>
+
+<footer>Alle vier sind Hütten des Schweizer Alpen-Clubs.</footer>
+
+</div>
+</body>
+</html>
